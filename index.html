@@ -12,44 +12,69 @@
       integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
       crossorigin="anonymous"
     />
-        <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-
-    <h1>New York NY, USA</h1>
-        <ul>
-          <li>Friday 05:00</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-              alt="Clouds"
-            />
-            12°C | F
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Type a city.."
+                  class="form-control"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
+          <div class="overview">
+            <h1 id="city"></h1>
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 73%</li>
-              <li>Wind: 2 km/h</li>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
             </ul>
           </div>
-       <small>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix weather-temperature">
+                <img src="" alt="Clouds" id="icon" class="float-left" />
+                <div class="float-left">
+                  <strong id="temperature"></strong>
+                  <span class="units"> °C </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: <span class="precipitation"></span>%</li>
+                <li>Humidity: <span id="wind"></span> %</li>
+                <li>Wind: <span id="humidity"></span> km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="weather-forcast" id="forecast"></div>
+        </div>
+        <small>
           <a
             href="https://github.com/cbrandt92/Vanilla-weather-app"
             target="_blank"
             >Open-source code</a
           >, by Christine Brandt
         </small>
-        </div>
-
-       </div>   
       </div>
-      <script src="src/script.js"></script>
     </div>
+
+    <script src="src/script.js"></script>
   </body>
 </html>
