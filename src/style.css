@@ -48,6 +48,7 @@ li:first-letter {
   margin-right: 5px;
   height: 64px;
   width: 64px;
+  float: left;
 }
 
 .weather-temperature strong {
@@ -55,8 +56,13 @@ li:first-letter {
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
+  display: float;
 }
 
+.feels-like {
+  color: rgb(135, 135, 135);
+  margin-top: 15px;
+}
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
@@ -66,28 +72,16 @@ li:first-letter {
 .weather-temperature .active {
   color: rgb(33, 33, 33);
   cursor: default;
-  text-decoration: none;
 }
 
 .weather-temperature .active:hover {
   text-decoration: none;
 }
 
-.weather-forecast {
-  margin-top: 20px;
-  text-align: center;
-  color: #0000;
+#fahrenheit-link {
+  text-decoration: none;
 }
 
-.weather-forecast-date {
-  font-size: 16px;
-  opacity: 0.5;
-}
-
-.weather-forecast-temperature-min {
-  opacity: 0.5;
-}
-
-.weather-forecast-temperature {
-  font-size: 13px;
+#celsius-link {
+  text-decoration: none;
 }
