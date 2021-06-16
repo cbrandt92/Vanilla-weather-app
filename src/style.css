@@ -62,6 +62,7 @@ li:first-letter {
 .feels-like {
   color: rgb(135, 135, 135);
   margin-top: 15px;
+  margin-bottom: 15px;
 }
 .weather-temperature .units {
   position: relative;
@@ -75,14 +76,6 @@ li:first-letter {
 }
 
 .weather-temperature .active:hover {
-  text-decoration: none;
-}
-
-#fahrenheit-link {
-  text-decoration: none;
-}
-
-#celsius-link {
   text-decoration: none;
 }
 
@@ -103,4 +96,9 @@ weather-forecast-temperature {
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
+}
+
+small {
+  display: block;
+  margin: 10px auto;
 }
