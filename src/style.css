@@ -1,3 +1,27 @@
+html {
+  font-size: 15px;
+  height: 101%;
+}
+
+body {
+  background: url(https://unsplash.imgix.net/23/pink-sky.JPG?fit=crop&fm=jpg&h=700&q=75&w=1050)
+    center center / cover fixed;
+  color: $white;
+  font-family: $font-stack;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  transition: all 0.5s;
+}
+
+.container {
+  background: $container-background;
+  border-radius: 0.5rem;
+  box-shadow: $shadow1;
+  margin: 5rem auto;
+  min-height: 200px;
+  overflow: hidden;
+}
+
 body {
   font-family: arial, sans-serif;
 }
@@ -30,7 +54,7 @@ li:first-letter {
 }
 
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 800px;
   margin: 30px auto;
 }
 
@@ -51,6 +75,16 @@ li:first-letter {
   float: left;
 }
 
+.btn {
+  color: #f1f1f1;
+  background-color: #9fd3c7;
+  border-radius: 1px solid #9fd3c7;
+}
+
+.btn:hover {
+  background-color: #f1f1f1;
+  color: #9fd3c7;
+}
 .weather-temperature strong {
   color: rgb(33, 33, 33);
   font-size: 64px;
@@ -64,21 +98,16 @@ li:first-letter {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
   top: -34px;
 }
 
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
+#icon {
+  color: #000;
 }
-
-.weather-temperature .active:hover {
-  text-decoration: none;
-}
-
 .weather-forecast {
   margin: 20px;
   text-align: center;
@@ -87,7 +116,7 @@ li:first-letter {
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 weather-forecast-temperature {
@@ -95,10 +124,16 @@ weather-forecast-temperature {
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 small {
   display: block;
   margin: 10px auto;
+
+  opacity: 0.5;
+}
+
+a {
+  color: #9fd3c7;
 }
