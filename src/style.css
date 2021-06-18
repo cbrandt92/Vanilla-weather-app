@@ -6,11 +6,10 @@ html {
 body {
   background: url(https://unsplash.imgix.net/23/pink-sky.JPG?fit=crop&fm=jpg&h=700&q=75&w=1050)
     center center / cover fixed;
-  color: $white;
+  color: #ffff;
   font-family: $font-stack;
   font-size: 1.5rem;
   line-height: 1.6;
-  transition: all 0.5s;
 }
 
 .container {
@@ -105,9 +104,10 @@ li:first-letter {
   top: -34px;
 }
 
-#icon {
+.units {
   color: #000;
 }
+
 .weather-forecast {
   margin: 20px;
   text-align: center;
